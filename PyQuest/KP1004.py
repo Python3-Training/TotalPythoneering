@@ -9,6 +9,7 @@ Authon: Randall Nagy
 Rev: 2025/11/29, 1.o
 File: KP1004.py
 Video: https://youtube.com/shorts/cKqUwsUOCVo
+Project: https://github.com/Python3-Training/TotalPythoneering/edit/main/PyQuest/
 Status: Testing Success
 '''
 def calc_area(l:int, w:int)->int:
@@ -28,4 +29,5 @@ def calc_area(l:int, w:int)->int:
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
+
 
