@@ -2,7 +2,7 @@
 
 Here is some random support for our [YouTube channel](https://www.youtube.com/@TotalPythoneering).
 
-We've also [an organization](https://github.com/TotalPythoneering) for hosting & sharig the official projects & packages.
+We've also [an organization](https://github.com/TotalPythoneering) for hosting & sharing the official projects & packages.
 
 ## PyTrek'ers?
 
