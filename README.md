@@ -2,7 +2,7 @@
 
 Here is some random support for our [YouTube channel](https://www.youtube.com/@TotalPythoneering).
 
-But yes, we've also [an organization](https://github.com/TotalPythoneering) 'cuz we wanted to stop the name hijacking ('afore it got PyQuested, et al.)
+We've also [an organization](https://github.com/TotalPythoneering) for hosting & sharig the official projects & packages.
 
 ## PyTrek'ers?
 
