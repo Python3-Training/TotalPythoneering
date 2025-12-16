@@ -82,15 +82,12 @@ def main():
     # Configure the font
     try:
         # Check if the "STENCIL" font is available and use it
-        available_fonts = list(tkFont.families())
-        if FONT_FACE in available_fonts:
-            custom_font = tkFont.Font(family=FONT_FACE, size=FONT_SIZE)
-        else:
-            # Fallback to a generic monospaced font if STENCIL is not found
-            custom_font = tkFont.Font(family="Monospace", size=FONT_SIZE)
-            print(f"'{FONT_FACE}' font not found, using 'Monospace' instead.")
+        ## available_fonts = list(tkFont.families())
+        ## if FONT_FACE in available_fonts:
+        custom_font = tkFont.Font(family=FONT_FACE, size=FONT_SIZE)
     except Exception:
-        custom_font = tkFont.Font(size=FONT_SIZE) # Fallback if error occurs
+        custom_font = tkFont.Font(family="Monospace", size=FONT_SIZE)
+        print(f"'{FONT_FACE}' font not found, using 'Monospace' instead.")
 
     # Create a scrolled text widget for the echo display
     text_area = scrolledtext.ScrolledText(root, wrap=tk.WORD, font=custom_font, bg='black', fg='lime')

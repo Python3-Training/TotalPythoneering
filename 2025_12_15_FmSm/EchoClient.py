@@ -6,7 +6,7 @@ a basic echo. Be sure to run ai_rpc_server.py before
 using this strategy.
 
 Authon: Randall Nagy
-Rev: 2025/12/15, 1.o
+Rev: 2025/12/16, 1.0.1
 File: EchoClient.py
 Video: https://youtube.com/shorts/2amN2KmAdko
 Project: https://github.com/Python3-Training/TotalPythoneering
@@ -30,5 +30,8 @@ def client_echo(message, url=PROXY_URL):
         return False, f"An error occurred: {e}"
     return False, '' # Meh - safe coding is no accident?
 
+
+if __name__ == "__main__":
+    print(client_echo('Testing.'))
 
 
