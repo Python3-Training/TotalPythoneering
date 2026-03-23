@@ -1,6 +1,6 @@
 # Welcome, Pythoneers!
 
-Here is some random support for our [YouTube channel](https://www.youtube.com/@TotalPythoneering).
+Here is some random support for our [YouTube channel](https://www.youtube.com/@TotalPythoneering). We're also [3D printing](https://www.thingiverse.com/TotalPythoneering).
 
 We've also [an organization](https://github.com/TotalPythoneering) for hosting & sharing the official projects & packages.
 
