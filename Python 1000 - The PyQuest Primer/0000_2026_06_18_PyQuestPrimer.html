@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The PyQuest Primer</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #7dd3fc;
+            --btn-secondary: #334155;
+            --btn-secondary-hover: #475569;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex-grow: 1;
+            width: calc(100% - 40px);
+        }
+        header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+        }
+        .course-title {
+            color: var(--accent);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+        }
+        .video-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid #334155;
+            display: flex;
+            flex-direction: column;
+        }
+        .video-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            border-color: var(--accent);
+        }
+        .video-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .video-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+            line-height: 1.4;
+        }
+        .video-description {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .button-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: auto;
+        }
+        .btn {
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.2s ease;
+        }
+        .btn-play {
+            background-color: var(--accent);
+            color: #0f172a;
+        }
+        .btn-play:hover {
+            background-color: var(--accent-hover);
+        }
+        .btn-resource {
+            background-color: var(--btn-secondary);
+            color: var(--text-main);
+            border: 1px solid #475569;
+        }
+        .btn-resource:hover {
+            background-color: var(--btn-secondary-hover);
+        }
+        footer {
+            background-color: var(--card-bg);
+            border-top: 1px solid #334155;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        .footer-link {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .footer-link:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The PyQuest Primer</h1>
+            <div class="course-title">Free &amp; Open Education for Total Pythoneers!</div>
+        </header>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1000: Welcome to Total Pythoneering</h3>
+                    <p class="video-description">Total Pythoneering's free &amp; 
+open educational opportunites are numbered. From 1000, 2000, 3000 and beyond Pythoneers
+of all tenure can easily manage any Pythoneering 'quest.</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bixxi-welcome-to-total-pythoneering-training.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1001: Your First Package</h3>
+                    <p class="video-description">Discover how to use Python at the Command Line Interface (CLI) to download &amp; install packages from the Python Package Index (PyPi.)</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7biy14-questing-the-modern-pythons.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1002: How Python Works</h3>
+                    <p class="video-description">Convince others that you REALLY know Python by talking about the REPL, and 'The Rules!'</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bj8ow-session-02-how-python-works-creating-and-running-scripts.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1003: PyQuest Review No. 01</h3>
+                    <p class="video-description">Lock what you've learned into long-term memory by answering 
+your first set of PyQuest review questions.</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bj8sw-session-02-pyquest-review.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://rumble.com/v7biy7m-session-01-pyquest-review.html?e9s=src_v1_ucp_a" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1004: Creating &amp; Automating Scripts</h3>
+                    <p class="video-description">Enjoy discovering how to create your own Pythoneering 'scripts' to replay, share, and re-use your creations.</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bj8ow-session-02-how-python-works-creating-and-running-scripts.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1005: PyQuest Review No. 02</h3>
+                    <p class="video-description">Master what you have learned by answering this second set of PyQuest interview questions.</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bj8sw-session-02-pyquest-review.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1006: Accepting &amp; Using Input</h3>
+                    <p class="video-description">Input, processing &amp; output ... in this lesson you will learn how to read, combine, and manage data.</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bkp1k-session-03-accepting-and-managing-user-inputs.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1007: PyQuest Review No. 03</h3>
+                    <p class="video-description">PyQuest cards &amp; concepts to know, save, keep, and share.</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bkp3s-session-03-pyquest-review.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1008: Functions, Blocks &amp; Processing</h3>
+                    <p class="video-description">Create your first function. Learn how computers can be 'linked together' to automate your data-processes by 'chaining.'</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bkp6c-session-04-functions-blocks-and-processing-review.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1009: PyQuest Review No. 04.</h3>
+                    <p class="video-description">PyQuest cards &amp; concepts to know, save, keep, and share.</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bkpsy-session-04-pyquest-review.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1010: Clearing Screens, Default Parameters &amp; Exceptions</h3>
+                    <p class="video-description">It’s time to understand how to create our own functions and parameter parameters and discover “Exceptional” 😏 code!</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bkp7w-session-05-clearing-screens-default-parameters-and-exceptions.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1011: PyQuest Review No. 05</h3>
+                    <p class="video-description">PyQuest cards &amp; concepts to know, save, keep, and share.</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bkpa0-session-05-pyquest-review.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">10012: Requirements &amp; Flowcharts</h3>
+                    <p class="video-description">Depicting procedures, steps, and requirements - Why write 1,000 words when a classic diagram will do?</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bkpc6-session-06-flowcharting-your-requirements.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1013: PyQuest Review No. 06</h3>
+                    <p class="video-description">PyQuest cards &amp; concepts to know, save, keep, and share.</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bkpdc-session-06-pyquest-review.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1014: Pythoneering from Requirements</h3>
+                    <p class="video-description">Discover how the Flowcharting 'Decision' symbol can map directly to our blocks &amp; code.</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bkpfi-session-07-coding-from-requirements.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1015: PyQuest Review No. 07</h3>
+                    <p class="video-description">PyQuest cards &amp; concepts to know, save, keep, and share.</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bkphg-session-07-pyquest-review.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1016: Homework Assignments?</h3>
+                    <p class="video-description">Wrapping up: Additional comment types, standards, and suggestions for further self-education. Reviewing the solution to the last activity, our mission is to keep on ‘Pythoneering!</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bkpjq-session-08-homework-assignments.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-info">
+                    <h3 class="video-title">1017: PyQuest Review No. 08 [FINAL]</h3>
+                    <p class="video-description">The final set of PyQuest cards &amp; concepts to know, save, keep, and share... In the professional world ‘nada is truly marked ‘won’ until that final review … is done!
+HAPPY PYTHONEERING!</p>
+                    <div class="button-group">
+                        <a href="https://rumble.com/v7bkpma-session-08-pyquest-review-final.html" class="btn btn-play" target="_blank">▶ Watch</a>
+                        <a href="https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer" class="btn btn-resource" target="_blank">📂 Resource</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>© 2026 All Rights Reserved | Education by <strong>Randall Nagy</strong></div>
+            <div>Need help? <a href="https://ko-fi.com/randallnagy" class="footer-link" target="_blank">Get Support</a></div>
+        </div>
+    </footer>
+</body>
+</html>
