@@ -16,4 +16,4 @@ Happy 'Pythoneering,
 
 --- Randall
 
-p.s. Also feel free to stop by and say hi at [ko-fi](https://ko-fi.com/randallnagy)?
+p.s. Also feel free to stop by and say hi at [ko-fi](https://ko-fi.com/randallnagy) ... but best of all [we've a new 'nexus as well!](https://leanpub.com/u/TotalPythoneering)
