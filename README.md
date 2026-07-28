@@ -2,7 +2,7 @@
 
 Here is some random support for our [YouTube channel](https://www.youtube.com/@TotalPythoneering). We're also [3D printing](https://www.thingiverse.com/TotalPythoneering).
 
-We've also [an organization](https://github.com/TotalPythoneering) for hosting & sharing the official projects & packages.
+We've also [an organization](https://github.com/TotalPythoneering) for hosting & sharing the official projects & packages... but best of all [we've a new 'nexus as well!](https://leanpub.com/u/TotalPythoneering)
 
 ## Free Training
 🎓[Python 1000: The PyQuest Primer](https://github.com/Python3-Training/TotalPythoneering/tree/main/Python%201000%20-%20The%20PyQuest%20Primer)
